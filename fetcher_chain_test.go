@@ -374,7 +374,7 @@ func TestFetcherChain_PrioritySorting(t *testing.T) {
 		datapipe.ChainWithFallbackMode[testEntity, *testRequest](datapipe.FallbackSequential),
 	)
 
-	chain.Fetch(context.Background(), &testRequest{})
+	_, _, _, _ = chain.Fetch(context.Background(), &testRequest{})
 
 	expected := []string{"first", "second", "third"}
 	for i, name := range expected {

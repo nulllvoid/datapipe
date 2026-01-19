@@ -141,7 +141,7 @@ func TestEnrichStage_ExtractsAuthType(t *testing.T) {
 	})
 	state.SetResults([]testEntity{{ID: "1"}}, false, "test")
 
-	stage.Execute(context.Background(), state)
+	_ = stage.Execute(context.Background(), state)
 
 	if privateEnricher.enrichCalls != 1 {
 		t.Error("Private enricher should have been called")
@@ -181,7 +181,7 @@ func TestEnrichStage_ExtractsExpandParams_FromRequest(t *testing.T) {
 	})
 	state.SetResults([]testEntity{{ID: "1"}}, false, "test")
 
-	stage.Execute(context.Background(), state)
+	_ = stage.Execute(context.Background(), state)
 
 	if userEnricher.enrichCalls != 1 {
 		t.Error("User enricher should have been called")
@@ -207,7 +207,7 @@ func TestEnrichStage_ExtractsExpandParams_FromMetadata(t *testing.T) {
 	state.SetResults([]testEntity{{ID: "1"}}, false, "test")
 	state.SetMetadata("expand", []string{"user"})
 
-	stage.Execute(context.Background(), state)
+	_ = stage.Execute(context.Background(), state)
 
 	if userEnricher.enrichCalls != 1 {
 		t.Error("User enricher should have been called via metadata expand")

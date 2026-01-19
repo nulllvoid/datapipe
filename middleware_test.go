@@ -90,4 +90,3 @@ func TestRecoveryMiddleware(t *testing.T) {
 		}
 	})
 }
-

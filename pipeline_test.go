@@ -399,4 +399,3 @@ func TestPipeline_WithMetrics(t *testing.T) {
 		t.Errorf("Result count = %v, want 1", metrics.resultCounts["test"])
 	}
 }
-

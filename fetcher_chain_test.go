@@ -407,4 +407,3 @@ func (f *orderTrackingFetcher[T, Req]) Fetch(ctx context.Context, req Req) ([]T,
 	*f.callOrder = append(*f.callOrder, f.Name())
 	return nil, false, nil
 }
-

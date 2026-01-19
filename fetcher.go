@@ -18,7 +18,6 @@ func NewBaseFetcher[T Entity, Req Request](name string, priority int) BaseFetche
 	return BaseFetcher[T, Req]{name: name, priority: priority}
 }
 
-func (f BaseFetcher[T, Req]) Name() string      { return f.name }
-func (f BaseFetcher[T, Req]) Priority() int     { return f.priority }
+func (f BaseFetcher[T, Req]) Name() string       { return f.name }
+func (f BaseFetcher[T, Req]) Priority() int      { return f.priority }
 func (f BaseFetcher[T, Req]) CanHandle(Req) bool { return true }
-

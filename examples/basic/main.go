@@ -25,9 +25,9 @@ type UserRequest struct {
 	Offset     int
 }
 
-func (r *UserRequest) GetLimit() int            { return r.Limit }
-func (r *UserRequest) GetOffset() int           { return r.Offset }
-func (r *UserRequest) Clone() datapipe.Request  { copy := *r; return &copy }
+func (r *UserRequest) GetLimit() int           { return r.Limit }
+func (r *UserRequest) GetOffset() int          { return r.Offset }
+func (r *UserRequest) Clone() datapipe.Request { copy := *r; return &copy }
 
 func main() {
 	fetchStage := datapipe.NewStage[User, *UserRequest](
@@ -102,4 +102,3 @@ func main() {
 		fmt.Printf("    - %s: %s (%s)\n", user.ID, user.Name, user.Email)
 	}
 }
-

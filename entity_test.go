@@ -35,4 +35,3 @@ func TestEntity_GetID(t *testing.T) {
 		})
 	}
 }
-

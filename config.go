@@ -17,4 +17,3 @@ func DefaultConfig() Config {
 		RetryDelay: 100 * time.Millisecond,
 	}
 }
-

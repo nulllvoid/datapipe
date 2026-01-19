@@ -103,4 +103,3 @@ func TestNewCollectionResponse(t *testing.T) {
 		t.Error("More should be true")
 	}
 }
-

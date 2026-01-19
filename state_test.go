@@ -173,4 +173,3 @@ func TestState_SetRequest(t *testing.T) {
 		t.Error("SetRequest did not update request")
 	}
 }
-

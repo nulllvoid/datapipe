@@ -27,15 +27,15 @@ type PayoutRequest struct {
 	Offset     int
 }
 
-func (r *PayoutRequest) GetLimit() int            { return r.Limit }
-func (r *PayoutRequest) GetOffset() int           { return r.Offset }
-func (r *PayoutRequest) Clone() datapipe.Request  { copy := *r; return &copy }
-func (r *PayoutRequest) GetSearchQuery() string   { return r.Query }
-func (r *PayoutRequest) HasSearchQuery() bool     { return r.Query != "" }
+func (r *PayoutRequest) GetLimit() int           { return r.Limit }
+func (r *PayoutRequest) GetOffset() int          { return r.Offset }
+func (r *PayoutRequest) Clone() datapipe.Request { copy := *r; return &copy }
+func (r *PayoutRequest) GetSearchQuery() string  { return r.Query }
+func (r *PayoutRequest) HasSearchQuery() bool    { return r.Query != "" }
 
 type AppDBFetcher struct {
 	datapipe.BaseFetcher[Payout, *PayoutRequest]
-	failRate int
+	failRate  int
 	callCount int
 }
 
@@ -220,4 +220,3 @@ func printResponse(resp *datapipe.CollectionResponse[Payout]) {
 		fmt.Printf("    - %s: %d cents (%s)\n", p.ID, p.Amount, p.Status)
 	}
 }
-

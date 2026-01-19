@@ -90,4 +90,3 @@ func (e *EnrichmentError) Unwrap() error {
 func NewEnrichmentError(enricher, message string, err error) *EnrichmentError {
 	return &EnrichmentError{Enricher: enricher, Message: message, Err: err}
 }
-

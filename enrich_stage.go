@@ -55,4 +55,3 @@ func (s *EnrichStage[T, Req]) extractExpandParams(state *State[T, Req]) []string
 
 	return nil
 }
-

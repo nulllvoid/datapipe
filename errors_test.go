@@ -158,4 +158,3 @@ func TestSentinelErrors(t *testing.T) {
 		})
 	}
 }
-

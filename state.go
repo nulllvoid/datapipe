@@ -101,4 +101,3 @@ func (s *State[T, Req]) ResultCount() int {
 	defer s.mu.RUnlock()
 	return len(s.results)
 }
-

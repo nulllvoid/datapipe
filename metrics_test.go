@@ -17,4 +17,3 @@ func TestNoopMetrics(t *testing.T) {
 	metrics.RecordResultCount("pipeline", 10)
 	metrics.RecordError("pipeline", "stage", "error")
 }
-

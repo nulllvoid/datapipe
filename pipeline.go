@@ -112,4 +112,3 @@ func (p *Pipeline[T, Req, Resp]) Name() string {
 func (p *Pipeline[T, Req, Resp]) StageCount() int {
 	return len(p.stages)
 }
-

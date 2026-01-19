@@ -104,4 +104,3 @@ func TestSortOrder_Constants(t *testing.T) {
 		t.Errorf("SortDesc = %v, want desc", datapipe.SortDesc)
 	}
 }
-

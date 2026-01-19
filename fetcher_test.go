@@ -108,4 +108,3 @@ func TestMockFetcher_CustomCanHandle(t *testing.T) {
 		}
 	})
 }
-

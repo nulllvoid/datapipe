@@ -15,4 +15,3 @@ func (NoopMetrics) RecordStageDuration(string, string, time.Duration) {}
 func (NoopMetrics) RecordFetchSource(string, string)                  {}
 func (NoopMetrics) RecordResultCount(string, int)                     {}
 func (NoopMetrics) RecordError(string, string, string)                {}
-

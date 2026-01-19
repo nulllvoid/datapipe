@@ -130,4 +130,3 @@ func (c *CompositeEnricher[T]) enrichParallel(ctx context.Context, items []T, en
 	wg.Wait()
 	return errs
 }
-

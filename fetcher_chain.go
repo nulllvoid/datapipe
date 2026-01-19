@@ -224,4 +224,3 @@ func (c *FetcherChain[T, Req]) fetchParallel(ctx context.Context, req Req) ([]T,
 
 	return []T{}, false, "", nil
 }
-

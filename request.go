@@ -34,4 +34,3 @@ const (
 	SortAsc  SortOrder = "asc"
 	SortDesc SortOrder = "desc"
 )
-

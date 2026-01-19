@@ -41,11 +41,11 @@ type PayoutRequest struct {
 	ExpandParams []string
 }
 
-func (r *PayoutRequest) GetLimit() int              { return r.Limit }
-func (r *PayoutRequest) GetOffset() int             { return r.Offset }
-func (r *PayoutRequest) Clone() datapipe.Request    { copy := *r; return &copy }
-func (r *PayoutRequest) GetAuthType() string        { return r.AuthType }
-func (r *PayoutRequest) GetExpandParams() []string  { return r.ExpandParams }
+func (r *PayoutRequest) GetLimit() int             { return r.Limit }
+func (r *PayoutRequest) GetOffset() int            { return r.Offset }
+func (r *PayoutRequest) Clone() datapipe.Request   { copy := *r; return &copy }
+func (r *PayoutRequest) GetAuthType() string       { return r.AuthType }
+func (r *PayoutRequest) GetExpandParams() []string { return r.ExpandParams }
 
 type PayoutFetcher struct {
 	datapipe.BaseFetcher[Payout, *PayoutRequest]
@@ -232,4 +232,3 @@ func printResponse(resp *datapipe.CollectionResponse[Payout]) {
 		}
 	}
 }
-

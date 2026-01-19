@@ -27,4 +27,3 @@ func (s *FunctionalStage[T, Req]) Required() bool { return s.required }
 func (s *FunctionalStage[T, Req]) Execute(ctx context.Context, state *State[T, Req]) error {
 	return s.fn(ctx, state)
 }
-

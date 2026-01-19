@@ -22,4 +22,3 @@ func (s *FetchStage[T, Req]) Execute(ctx context.Context, state *State[T, Req]) 
 	state.SetResults(results, hasMore, source)
 	return nil
 }
-

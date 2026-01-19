@@ -270,4 +270,3 @@ func TestPipeline_WithParallelEnrichment(t *testing.T) {
 		t.Error("Both enrichers should have been called")
 	}
 }
-

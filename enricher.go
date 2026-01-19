@@ -87,4 +87,3 @@ func (e BaseEnricher[T]) ExpandKey() string {
 func (e BaseEnricher[T]) AllowedAuths() []string {
 	return e.allowedAuths
 }
-

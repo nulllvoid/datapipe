@@ -42,4 +42,3 @@ func RecoveryMiddleware[T Entity, Req Request]() Middleware[T, Req] {
 		}
 	}
 }
-

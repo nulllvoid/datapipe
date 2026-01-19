@@ -126,4 +126,3 @@ func TestFunctionalStage_Execute(t *testing.T) {
 		}
 	})
 }
-

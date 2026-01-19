@@ -336,4 +336,3 @@ func TestCompositeEnricher_ContextCancellation(t *testing.T) {
 		t.Error("Expected context cancellation error")
 	}
 }
-

@@ -25,4 +25,3 @@ func NewCollectionResponse[T Entity](items []T, hasMore bool) *CollectionRespons
 		Items:  items,
 	}
 }
-

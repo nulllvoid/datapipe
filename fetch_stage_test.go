@@ -174,4 +174,3 @@ func TestPipeline_WithFetchersAndMode(t *testing.T) {
 		t.Errorf("Count = %v, want 1", resp.GetCount())
 	}
 }
-

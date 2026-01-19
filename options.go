@@ -116,4 +116,3 @@ func WithParallelEnrichment[T Entity, Req Request, Resp Response[T]](parallel bo
 		p.AddStage(NewEnrichStage[T, Req](composite))
 	}
 }
-

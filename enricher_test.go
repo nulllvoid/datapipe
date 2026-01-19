@@ -198,4 +198,3 @@ func TestBaseEnricher_AllowedAuths(t *testing.T) {
 		t.Errorf("AllowedAuths() = %v, want [private, admin]", auths)
 	}
 }
-

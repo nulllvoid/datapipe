@@ -49,4 +49,3 @@ func TestConfig_CustomValues(t *testing.T) {
 		t.Errorf("RetryDelay = %v, want 500ms", cfg.RetryDelay)
 	}
 }
-

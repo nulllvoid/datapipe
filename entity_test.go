@@ -6,13 +6,6 @@ import (
 	"github.com/nulllvoid/datapipe"
 )
 
-type testEntity struct {
-	ID   string
-	Name string
-}
-
-func (e testEntity) GetID() string { return e.ID }
-
 func TestEntity_GetID(t *testing.T) {
 	t.Parallel()
 

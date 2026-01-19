@@ -1,4 +1,4 @@
 module github.com/nulllvoid/datapipe
 
-go 1.21
+go 1.23
 

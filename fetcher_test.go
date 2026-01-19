@@ -7,26 +7,6 @@ import (
 	"github.com/nulllvoid/datapipe"
 )
 
-type testEntity struct {
-	ID   string
-	Name string
-}
-
-func (e testEntity) GetID() string { return e.ID }
-
-type testRequest struct {
-	Limit      int
-	Offset     int
-	Query      string
-	ShouldFail bool
-}
-
-func (r *testRequest) GetLimit() int            { return r.Limit }
-func (r *testRequest) GetOffset() int           { return r.Offset }
-func (r *testRequest) Clone() datapipe.Request  { copy := *r; return &copy }
-func (r *testRequest) GetSearchQuery() string   { return r.Query }
-func (r *testRequest) HasSearchQuery() bool     { return r.Query != "" }
-
 type mockFetcher[T datapipe.Entity, Req datapipe.Request] struct {
 	datapipe.BaseFetcher[T, Req]
 	results     []T
